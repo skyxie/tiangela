@@ -1,0 +1,30 @@
+
+body {
+  background-image: url('/images/balloon.JPG');
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding:0px;
+  margin:0px;
+}
+
+div.date {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 40pt;
+  text-align: right;
+  top: 15%;
+  padding-top: 50px;
+  margin: 0px;
+  width: 100%;
+}
+
+.transparent {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.tian-color { color: rgba(0, 0, 128, 0.3); }
+.angela-color { color: rgba(128, 0, 0, 0.3); }
+.tiangela-color { color: rgba(128, 0, 128, 0.6); }
