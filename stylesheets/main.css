@@ -1,0 +1,47 @@
+
+.circle-container { 
+  height: 600px;
+  width: 633px;
+  left: -161px;
+  top: -20px;
+  position: absolute;
+}
+  
+.circle-text {
+  letter-spacing: 30px;
+  top: 377px;
+  left: 273px;
+  float: left;
+  color: white;
+  position: absolute;
+  font-family: moon-light;
+  text-align: center;
+  font-size: 92px;
+}
+
+.circle-tian {
+  background-color: rgba(47, 67, 134, 0.9);
+}
+
+.circle-angela {
+  background-color: rgba(192, 73, 157, 0.9);
+  left: 350px;
+}
+
+.circle {
+  border-radius: 300px;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.intro {
+  position: absolute;
+  top: 232px;
+  left: 442px;  
+  color: white;
+  font-family: gotham-narrow-book;
+  font-size: 11pt;
+  line-height: 2;
+}
