@@ -1,4 +1,4 @@
-
+/*
 body {
   background-image: url('/images/balloon.JPG');
   background-color: rgb(0, 0, 0);
@@ -23,8 +23,43 @@ div.date {
 .transparent {
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(128, 128, 128, 0.3);
+}*/
+
+.circle-container { 
+  height: 400px;
+  width: 633px;
+  left: -130px;
+  top: -20px;
+  position: absolute;
+}
+  
+.circle-text {
+  letter-spacing: 27px;
+  top: 247px;
+  left: 172px;
+  float: left;
+  color: white;
+  position: absolute;
+  font-family: moon-light;
+  text-align: center;
+  font-size: 53px;
 }
 
-.tian-color { color: rgba(0, 0, 128, 0.3); }
-.angela-color { color: rgba(128, 0, 0, 0.3); }
-.tiangela-color { color: rgba(128, 0, 128, 0.6); }
+.circle-tian { background-color: rgba(47, 67, 134, 0.9); }
+
+.circle-angela { background-color: rgba(192, 73, 157, 0.9); left:233px; }
+
+.circle {
+  border-radius: 200px;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.intro {
+  width: 400px;
+  position: absolute;
+  top: 400px;
+  margin-left: 32px;  
+}
