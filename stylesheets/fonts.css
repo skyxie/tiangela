@@ -2,3 +2,7 @@
   font-family: moon-light;
   src: url('/fonts/MoonLight.otf');
 }
+@font-face {
+  font-family: gotham-narrow-book;
+  src: url('/fonts/GothamNarrow-Book.otf');
+}
