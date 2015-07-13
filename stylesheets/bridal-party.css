@@ -1,0 +1,54 @@
+
+.bridal-party-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bridal-party-title {
+  padding-top: 50px;
+}
+
+.bridal-party-row {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bridal-party-text {
+  float: left;
+  color: #000;
+  text-align: left;
+  font-size: 10pt;
+  line-height: 1.5;
+  width: 40%;
+  padding: 2%;
+  margin: 2%;
+}
+
+.bridal-party-image-container {
+  float: left;
+  margin: 8px;
+  height: 120px;
+  width: 150px;
+}
+
+img.bridal-party-image {
+  float: left;
+  position: relative;
+  left: -10px;
+  border-radius: 120px;
+  z-index: 1;
+  height: 120px;
+  width: 120px;
+}
+
+.bridal-party-circle { 
+  float: left;
+  position: relative;
+  top: -120px; /* Move up to match height of bridal-party-image */
+  left: 30px; /* Move right */
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  z-index: -1;
+}

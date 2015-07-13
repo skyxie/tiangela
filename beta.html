@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TIANGELA</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/bridal-party.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/circles.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('div.event-year').click(function showEventTitleDesc(evt) {
+        // Hide all other event descriptions and titles
+        $('div.event-title').hide();
+        var eventDescriptionElems = $('div.about-event-description');
+        eventDescriptionElems.hide();
+        // Show sibling event title      
+        var e = $(evt.target);
+        e.parent().find('.event-title').show();
+        // Show matching event description
+        eventDescriptionElems.filter('.event-description-'+e.html()).show();
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div class="nav-container container">
+    <a href="#top" class="nav">TOP</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#about" class="nav">BRIDE & GROOM</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#bridal-party" class="nav">BRIDAL PARTY</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#info" class="nav">LOCATION</a>
+    <!--
+      TODO: Add registry link
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#registry" class="nav">REGISTRY</a>
+    -->
+  </div>
+
+  <a name="top">
+    <div class="circle-container container">
+      <div class="circle-tian tian-background-color circle">
+      </div>
+      <div class="circle-angela angela-background-color circle">
+      </div>
+      <div class="circle-text">
+        TIANGELA
+      </div>
+    </div>
+  </a>
+
+  <div class="about-container container">
+    <a name="about">
+      <div class="container-title about-title">
+        THE BRIDE & GROOM
+      </div>
+    </a>
+
+    <div class="about-block-container about-timeline-container tian-background-color">
+      <div class="about-block about-timeline-block">
+        <div class="timeline">
+          <div class="event-year">2008</div>
+          <div class="event-title">BOY &amp; GIRL MEET</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2009</div>
+          <div class="event-title">BOY &amp; GIRL MEET, AGAIN</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2010</div>
+          <div class="event-title">BOY &amp; GIRL MEET 3</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2011</div>
+          <div class="event-title">RETURN TO NYC</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2012</div>
+          <div class="event-title">MOVING IN</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2013</div>
+          <div class="event-title">WORLD TRAVELS</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2014</div>
+          <div class="event-title">WORLD TRAVELS</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2015</div>
+          <div class="event-title">PROPOSAL</div>
+        </div>
+        <div class="timeline">
+          <div class="event-year">2016</div>
+          <div class="event-title">MARRIAGE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-block-container about-event-container angela-background-color">
+      <div class="about-block about-event-description event-description-2008">
+        Angela watches
+      </div>
+      <div class="about-block about-event-description event-description-2015">
+        Tian trapped Angela in a hot air balloon in Napa, CA and asked an innocent couple to take a photo of them in front of the sunrise. After one photo, he asked for another, which is when he pulled out the ring and asked Angela to marry him. Upon returning to earth, they were engaged.
+      </div>
+    </div>
+  </div>
+
+  <div class="bridal-party-container container">
+    <a name="bridal-party">
+      <div class="container-title bridal-party-title">
+        THE BRIDAL PARTY
+      </div>
+    </a>
+
+    <div class="bridal-party-row">
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/nick_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle tian-background-color"></div>
+        </div>
+Nick and Tian met in the back of math class. And though the arithmetic is long behind them, over the years they have found to add up better than a Riemann sum. From roommates to college to karaoke disasters, they have had many great memories and many great... times they don't remember. Nick currently lives in Dallas, TX, where he wears a lot of denim.
+
+<br><br>Nick is very happy for his friend Tian to have found someone so swell, and is happy to call Angela a friend. He is honored to be a part of their wedding!
+      </div>
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/laura_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle angela-background-color"></div>
+        </div>
+Laura and Angela met on the first day of third grade, when Laura first noticed Angela's impeccable fashion taste (noteworthy even at the tender age of 8!). The two became fast friends, singing along to Savage Garden and N*SYNC, beating up boys during recess, and trading SANRIO stickers during lunch. A decade later, Laura met Tian as undergraduates at Columbia University, when they both served on the same APIA organization. Laura is proud to call both the bride and groom close friends, and cannot wait for the two lovebirds to tie the knot!
+
+<br><br>Today, Laura is a brand marketer based in NYC. She currently lives downtown with her husband Benny.  
+      </div>
+    </div>
+
+    <div class="bridal-party-row">
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/bing_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle tian-background-color"></div>
+        </div>
+Tian sold Bing an accounting and finance textbook in 2005. They handled the transaction entirely in Mandarin Chinese, both thinking it would help them in the negotiations. Years later they broke ground on a patch of rental property in the east village that would forever be known as Yea Buddy; this is also where Bing met and befriended Angela, of Tiangela.
+
+<br><br> Bing still lives in New York where he works as a marine biologist, studying exotic fish species in the East and Hudson River ecosystems.
+      </div>
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/yeeferz_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle angela-background-color"></div>
+        </div>
+Jessica also known as Yeefers, a nickname given by the bride many years ago and has stuck around. Yeefers met Angela in middle school and have been best friends since. If Yeefers isn't taking cat photos or running a race, she's probably looking at pug photos.
+      </div>
+    </div>
+
+    <div class="bridal-party-row">
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/bardhi_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle tian-background-color"></div>
+        </div>
+Bardhi and Tian met while working together at BlackRock. They sat next to each other for a good half year before having an actual conversation and finding out they both were Columbia alumni. When Tian moved to San Francisco, Bardhi followed suit, after which Tian swiftly moved back to New York. Over the years they have become closer friends and bonded over a variety of activities, starting with happy hours in New York, and upgrading to happy weekends in Napa, snowboarding trips, and even 24 sleepless hours in Vegas (consisting of roller coaster rides and comedy shows! what else would one do in Vegas?). After meeting Angela many times, Bardhi is honored to call her a friend and is happy that she and Tian are such a great fit.
+
+<br><br>Bardhi currently lives in San Francisco, where he is conforming by working in a tech startup.
+      </div>
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/vicky_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle angela-background-color"></div>
+        </div>
+Angela and I meet during our very first day of high school thirteen years ago as young fresh preppies. It was practically love at first sight with the most adorable little girl who turned around and smiled at me with a red scrunchie in her hair. We spent the next four years roaming the halls of prep and exploring the streets of Queens with our mischievous selves. Our bond blossomed through countless hours of ridiculous adventures; teen girl talks, sleepovers, long walks home from school that wasn’t long enough for us to finish gossiping about our day. To the years we were young, broke, and fabulously cute- it was just the beginning of the endless memories we continue to build in our friendship’s storybook. Fast-forward more then a decade later, my very dear best friend is getting married! Now that we are a little wiser with a few more dollars in our pockets, the present holds just as much significant memories to look forward to. This is an amazing and exciting chapter for Angela and I’m delighted to be a part of this milestone journey. Cheers to Tiangela and the love that brings us all together! 
+      </div>
+    </div>
+
+    <div class="bridal-party-row">
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/mack_120x120.jpg" class="bridal-party-image">
+          <div class="bridal-party-circle tian-background-color"></div>
+        </div>
+Mack met Tian at CUnity, an extinct Columbia orientation event that trapped freshmen on a small lawn so they can be friends. They each thought the other was pretty fobby and probably an international student. As Tian's hair grew shorter their friendship grew stronger and over the years they've held many questionable parties where glasses were lost, teeth were chipped, and somehow made 3+3 equal 5.
+
+<br><br>Mack currently lives in San Francisco and extols the majestic beauty of the western lands to those looking to reconsider their eastern ties. Mack is really happy that Tiangela found each other and hope they name their kids after Pokemons as well.
+      </div>
+      <div class="bridal-party-text">
+        <div class="bridal-party-image-container">
+          <img src="photos/avatar-male.png" class="bridal-party-image">
+          <div class="bridal-party-circle angela-background-color"></div>
+        </div>
+Andrew Day
+      </div>
+    </div>
+  </div>
+
+  <div class="location-container container">
+    <a name="locaion">
+      <div class="container-title">
+        THE LOCATION
+      </div>
+    </a>
+  </div>
+</body>
+</html>
