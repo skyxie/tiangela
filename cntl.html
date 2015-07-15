@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Vertical Timeline Plugin Demo</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="cntl.css">
+</head>
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin:150px auto 50px auto" align="center">jQuery Vertical Timeline Plugin Demo</h1>
+
+    <div class="cntl">
+      <span class="cntl-bar cntl-center">
+        <span class="cntl-bar-fill"></span>
+      </span>
+
+      <div class="cntl-states">
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET</h4>
+            <p>Angela watches Tian emcee Culture Shock, an event organized by Maid of Honor Laura Chin at Columbia. After the show, they meet, they talk, and descover they have incongruous taste in music.</p>
+          </div>
+          <div class="cntl-icon cntl-center tian-background-color">2008</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET II</h4>
+            <p>Angela runs into Tian at Laura Chin's birthday party. Tian asks her to go on a date that weekend, but Angela had a BBQ to attend. Not giving up, Tian asks her to go out the next weekend, but Angela has another BBQ. Unrelenting, Tian asks her to go out the weekend after that, but Angela has <i>yet another</i> BBQ. Thinking this girl must really dislike him if she can't even come up with new excuses, Tian gives up.</p>
+          </div>
+          <div class="cntl-icon cntl-center angela-background-color">2009</div>
+        </div> 
+        
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET III</h4>
+            <p>Angela and Bridesmaid Jessica Yee visit San Francisco, where Tian is living. They all hangout, but this time, Angela and Tian finally hit it off.</p>
+          </div>
+          <div class="cntl-icon cntl-center tian-background-color">2010</div>
+        </div>
+
+        <div class="cntl-state">
+        </div>
+
+      </div>
+    </div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="jquery.cntl.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function(e){
+		$('.cntl').cntl({
+			revealbefore: 300,
+			anim_class: 'cntl-animate',
+			onreveal: function(e){
+				console.log(e);
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

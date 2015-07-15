@@ -1,6 +1,5 @@
 
 .bridal-party-container {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -36,7 +35,7 @@ img.bridal-party-image {
   float: left;
   position: relative;
   left: -10px;
-  border-radius: 120px;
+  border-radius: 50%;
   z-index: 1;
   height: 120px;
   width: 120px;
@@ -49,6 +48,6 @@ img.bridal-party-image {
   left: 30px; /* Move right */
   height: 120px;
   width: 120px;
-  border-radius: 120px;
+  border-radius: 50%;
   z-index: -1;
 }

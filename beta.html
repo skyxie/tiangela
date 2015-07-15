@@ -7,7 +7,9 @@
   <link rel="stylesheet" type="text/css" href="bridal-party.css">
   <link rel="stylesheet" type="text/css" href="circles.css">
   <link rel="stylesheet" type="text/css" href="about.css">
-  <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="cntl.css">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="jquery.cntl.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('div.event-year').click(function showEventTitleDesc(evt) {
@@ -21,6 +23,17 @@
         // Show matching event description
         eventDescriptionElems.filter('.event-description-'+e.html()).show();
       });
+
+      $('.cntl').cntl({
+        // The amount of "scroll padding" to allow 
+        // The more, the later the state will be revealed
+        revealbefore: 300,
+        // The animate class
+        // This class should have animation rules in css
+        anim_class: 'cntl-animate',
+        // A callback once the state has been revealed
+        onreveal: null
+      });
     });
   </script>
 </head>
@@ -29,11 +42,11 @@
   <div class="nav-container container">
     <a href="#top" class="nav">TOP</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#about" class="nav">BRIDE & GROOM</a>
+    <a href="#cntl" class="nav">OUR STORY</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#wedding" class="nav">WEDDING</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#bridal-party" class="nav">BRIDAL PARTY</a>
-    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#info" class="nav">LOCATION</a>
     <!--
       TODO: Add registry link
       &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -53,60 +66,86 @@
     </div>
   </a>
 
-  <div class="about-container container">
-    <a name="about">
-      <div class="container-title about-title">
-        THE BRIDE & GROOM
+  <div class="cntl-container container">
+    <a name="cntl">
+      <div class="container-title cntl-title">
+        OUR STORY
       </div>
     </a>
 
-    <div class="about-block-container about-timeline-container tian-background-color">
-      <div class="about-block about-timeline-block">
-        <div class="timeline">
-          <div class="event-year">2008</div>
-          <div class="event-title">BOY &amp; GIRL MEET</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2009</div>
-          <div class="event-title">BOY &amp; GIRL MEET, AGAIN</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2010</div>
-          <div class="event-title">BOY &amp; GIRL MEET 3</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2011</div>
-          <div class="event-title">RETURN TO NYC</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2012</div>
-          <div class="event-title">MOVING IN</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2013</div>
-          <div class="event-title">WORLD TRAVELS</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2014</div>
-          <div class="event-title">WORLD TRAVELS</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2015</div>
-          <div class="event-title">PROPOSAL</div>
-        </div>
-        <div class="timeline">
-          <div class="event-year">2016</div>
-          <div class="event-title">MARRIAGE</div>
-        </div>
-      </div>
-    </div>
+    <div class="cntl">
+      <span class="cntl-bar cntl-center">
+        <span class="cntl-bar-fill"></span>
+      </span>
 
-    <div class="about-block-container about-event-container angela-background-color">
-      <div class="about-block about-event-description event-description-2008">
-        Angela watches
-      </div>
-      <div class="about-block about-event-description event-description-2015">
-        Tian trapped Angela in a hot air balloon in Napa, CA and asked an innocent couple to take a photo of them in front of the sunrise. After one photo, he asked for another, which is when he pulled out the ring and asked Angela to marry him. Upon returning to earth, they were engaged.
+      <div class="cntl-states">
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET</h4>
+            <p>Angela watches Tian emcee Culture Shock, an event organized by Maid of Honor Laura Chin at Columbia. After the show, they meet, they talk, and descover they have incongruous taste in music.</p>
+          </div>
+          <div class="cntl-icon cntl-center">04-18-08</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET II</h4>
+            <p>Angela runs into Tian at Laura Chin's birthday party. Tian asks her to go on a date that weekend, but Angela had a BBQ to attend. Not giving up, Tian asks her to go out the next weekend, but Angela has another BBQ. Unrelenting, Tian asks her to go out the weekend after that, but Angela has <i>yet another</i> BBQ. Thinking this girl must really dislike him if she can't even come up with new excuses, Tian gives up.</p>
+          </div>
+          <div class="cntl-icon cntl-center">06-26-09</div>
+        </div> 
+        
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>BOY &amp; GIRL MEET III</h4>
+            <p>Angela and Bridesmaid Jessica Yee visit San Francisco, where Tian is living. They all hangout, but this time, Angela and Tian finally hit it off.</p>
+          </div>
+          <div class="cntl-icon cntl-center">06-11-10</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>RETURN TO NYC</h4>
+            <p>Tian moves back to NYC with Groomsman Xibing David Ma.</p>
+          </div>
+          <div class="cntl-icon cntl-center">05-01-11</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>MOVING IN</h4>
+            <p>Tian and Angela move-in together in Hell's Kitchen.</p>
+          </div>
+          <div class="cntl-icon cntl-center">04-01-12</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content">
+            <h4>THE PROPOSAL</h4>
+            <p>Tian traps Angela in a hot air balloon in Napa, CA and asks an innocent couple to take a photo in front of the sunrise. After one photo, he asked for another, when he suddenly pulled out a ring and asked Angela to marry him. Upon returning to earth, they were engaged.</p>
+          </div>
+          <div class="cntl-icon cntl-center">02-02-15</div>
+        </div>
+
+        <div class="cntl-state">
+          <div class="cntl-content cntl-end">
+            <a name="wedding"><h4>THE WEDDING</h4></a>
+
+            <div class="wedding-container">
+              <div class="wedding-block-container wedding-left-container tian-background-color">
+                <div class="wedding wedding-top">DECEMBER 19TH, 2015 03:00PM</div>
+              </div>
+
+              <div class="wedding-block-container wedding-right-container angela-background-color">
+                <div class="wedding wedding-top">The Metropolitan Building</div>
+                <div class="wedding wedding-middle">4401 11th St, Long Island City, NY 11101</div>
+              </div>
+            </div>
+          </div>
+          <div class="cntl-icon cntl-center">12-19-15</div>
+        </div>
+
       </div>
     </div>
   </div>
