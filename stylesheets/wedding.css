@@ -1,0 +1,68 @@
+
+.wedding-container {
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.wedding-side-container {
+  margin-top: 20px;
+  height: 48%;
+  width: 48%;
+  float: left;
+}
+
+.wedding-left-container  { margin-right: 2%; }
+.wedding-right-container { margin-left: 2%;  }
+
+.wedding-info-block {
+  margin-bottom: 20px;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.wedding-info-label {
+  font-weight: bold;
+  width: 30%;
+  float: left;
+}
+
+.wedding-info-content {
+  width: 70%;
+  float: left;
+}
+
+.wedding-info-container {
+  width: 70%;
+  clear: both;
+}
+
+.subway-label   { float: left; width: 50%; }
+.subway-content { float: left; width: 50%; clear: right; }
+
+.train-row {
+  margin-bottom: 10px;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.train {
+  font-family: 'Helvetica';
+  height: 16px;
+  width: 15px;
+  padding-left: 2px;
+  padding-top: 1px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0px 5px 0px 5px;
+  text-align: center;
+  float: left;
+}
+
+.train-7 { padding-left: 3px; width: 14px; background-color: #B933AD; }
+.train-e { background-color: #2850AD; }
+.train-g { background-color: #6CBE45; }
+.train-m { background-color: #FF6319; }
+.train-n { background-color: #FCCC0A; }

@@ -9,8 +9,7 @@
 
 .bridal-party-row {
   clear: both;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: auto;
 }
 
 .bridal-party-text {
@@ -19,9 +18,19 @@
   text-align: left;
   font-size: 10pt;
   line-height: 1.5;
-  width: 40%;
+  width: 42%;
+  opacity: 0;
   padding: 2%;
   margin: 2%;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.bridal-party-animate {
+  opacity: 1;
 }
 
 .bridal-party-image-container {

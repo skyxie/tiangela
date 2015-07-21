@@ -6,10 +6,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/bridal-party.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/circles.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/wedding.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/cntl.css">
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="javascript/jquery.cntl.js"></script>
+  <script src="javascript/bridal-party.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('div.event-year').click(function showEventTitleDesc(evt) {
@@ -25,13 +26,14 @@
       });
 
       $('.cntl').cntl({
-        // The amount of "scroll padding" to allow 
-        // The more, the later the state will be revealed
         revealbefore: 300,
-        // The animate class
-        // This class should have animation rules in css
         anim_class: 'cntl-animate',
-        // A callback once the state has been revealed
+        onreveal: null
+      });
+
+      $('.bridal-party-container').bp({
+        revealbefore: 300,
+        anim_class: 'bridal-party-animate',
         onreveal: null
       });
     });
@@ -39,6 +41,8 @@
 </head>
 <body>
 
+
+<!--
   <div class="nav-container container">
     <a href="#top" class="nav">TOP</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -47,12 +51,11 @@
     <a href="#wedding" class="nav">WEDDING</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#bridal-party" class="nav">BRIDAL PARTY</a>
-    <!--
       TODO: Add registry link
       &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#registry" class="nav">REGISTRY</a>
-    -->
   </div>
+-->
 
   <a name="top">
     <div class="circle-container container">
@@ -133,13 +136,56 @@
             <a name="wedding"><h4>THE WEDDING</h4></a>
 
             <div class="wedding-container">
-              <div class="wedding-block-container wedding-left-container tian-background-color">
-                <div class="wedding wedding-top">DECEMBER 19TH, 2015 03:00PM</div>
+              <div class="wedding-side-container wedding-left-container">
+                <div class="wedding-info-block">
+                  <div class="wedding-info-label">DATE</div>
+                  <div class="wedding-info-content">DECEMBER 19TH, 2015 03:00PM</div>
+                </div>
+
+                <div class="wedding-info-block">
+                  <div class="wedding-info-label">LOCATION</div>
+                  <div class="wedding-info-content">
+                    The Metropolitan Building
+                    <br>4401 11th St, Long Island City, NY 11101
+                  </div>
+                </div>
+
+                <div class="wedding-info-block">
+                  <div class="wedding-info-label">
+                    SUBWAYS
+                  </div>
+
+                  <div class="wedding-info-content">
+                    <div class="subway-label">
+                      <div class="train-row">Court Sq</div>
+                      <div class="train-row">Queensboro Plaza</div>
+                    </div>
+
+                    <div class="subway-content">
+                      <div class="train-row">
+                        <div class="train train-e">E</div>
+                        <div class="train train-m">M</div>
+                        <div class="train train-7">7</div>
+                        <div class="train train-g">G</div>
+                      </div>
+
+                      <div class="train-row">
+                        <div class="train train-7">7</div>
+                        <div class="train train-n">N</div>
+                        <div class="train train-n">Q</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="wedding-block-container wedding-right-container angela-background-color">
-                <div class="wedding wedding-top">The Metropolitan Building</div>
-                <div class="wedding wedding-middle">4401 11th St, Long Island City, NY 11101</div>
+              <div class="wedding-side-container wedding-right-container">
+                <iframe
+                  width="400" height="400"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA01COP4-p6m0OeWkSc3oUIm7Bf0dQaS9g&q=The+Metropolitan+Building,Long+Island+City+NY&attribution_source=Google+Maps+Embed+API&attribution_web_url=http://www.metropolitanbuilding.com/&attribution_ios_deep_link_id=comgooglemaps://?daddr=The+Metropolitan+Building,Long+Island+City+NY&zoom=15"
+                  allowfullscreen>
+                </iframe>
               </div>
             </div>
           </div>
@@ -153,12 +199,12 @@
   <div class="bridal-party-container container">
     <a name="bridal-party">
       <div class="container-title bridal-party-title">
-        THE BRIDAL PARTY
+        THE WEDDING PARTY
       </div>
     </a>
 
     <div class="bridal-party-row">
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-tian">
         <div class="bridal-party-image-container">
           <img src="photos/nick_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle tian-background-color"></div>
@@ -167,7 +213,7 @@ Nick and Tian met in the back of math class. And though the arithmetic is long b
 
 <br><br>Nick is very happy for his friend Tian to have found someone so swell, and is happy to call Angela a friend. He is honored to be a part of their wedding!
       </div>
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-angela">
         <div class="bridal-party-image-container">
           <img src="photos/laura_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle angela-background-color"></div>
@@ -179,7 +225,7 @@ Laura and Angela met on the first day of third grade, when Laura first noticed A
     </div>
 
     <div class="bridal-party-row">
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-tian">
         <div class="bridal-party-image-container">
           <img src="photos/bing_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle tian-background-color"></div>
@@ -188,7 +234,7 @@ Tian sold Bing an accounting and finance textbook in 2005. They handled the tran
 
 <br><br> Bing still lives in New York where he works as a marine biologist, studying exotic fish species in the East and Hudson River ecosystems.
       </div>
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-angela">
         <div class="bridal-party-image-container">
           <img src="photos/yeeferz_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle angela-background-color"></div>
@@ -198,7 +244,7 @@ Jessica also known as Yeefers, a nickname given by the bride many years ago and 
     </div>
 
     <div class="bridal-party-row">
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-tian">
         <div class="bridal-party-image-container">
           <img src="photos/bardhi_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle tian-background-color"></div>
@@ -207,17 +253,17 @@ Bardhi and Tian met while working together at BlackRock. They sat next to each o
 
 <br><br>Bardhi currently lives in San Francisco, where he is conforming by working in a tech startup.
       </div>
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-angela">
         <div class="bridal-party-image-container">
           <img src="photos/vicky_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle angela-background-color"></div>
         </div>
-Angela and I meet during our very first day of high school thirteen years ago as young fresh preppies. It was practically love at first sight with the most adorable little girl who turned around and smiled at me with a red scrunchie in her hair. We spent the next four years roaming the halls of prep and exploring the streets of Queens with our mischievous selves. Our bond blossomed through countless hours of ridiculous adventures; teen girl talks, sleepovers, long walks home from school that wasn’t long enough for us to finish gossiping about our day. To the years we were young, broke, and fabulously cute- it was just the beginning of the endless memories we continue to build in our friendship’s storybook. Fast-forward more then a decade later, my very dear best friend is getting married! Now that we are a little wiser with a few more dollars in our pockets, the present holds just as much significant memories to look forward to. This is an amazing and exciting chapter for Angela and I’m delighted to be a part of this milestone journey. Cheers to Tiangela and the love that brings us all together! 
+Angela and I meet during our very first day of high school thirteen years ago as young fresh preppies. It was practically love at first sight with the most adorable little girl who turned around and smiled at me with a red scrunchie in her hair. We spent the next four years roaming the halls of prep and exploring the streets of Queens with our mischievous selves. Our bond blossomed through countless hours of ridiculous adventures; teen girl talks, sleepovers, long walks home from school that wasn’t long enough for us to finish gossiping about our day. To the years we were young, broke, and fabulously cute- it was just the beginning of the endless memories we continue to build in our friendship’s storybook. Fast-forward more then a decade later, my very dear best friend is getting married! Now that we are a little wiser with a few more dollars in our pockets, the present holds just as much significant memories to look forward to. This is an amazing and exciting chapter for Angela and I'm delighted to be a part of this milestone journey. Cheers to Tiangela and the love that brings us all together! 
       </div>
     </div>
 
     <div class="bridal-party-row">
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-tian">
         <div class="bridal-party-image-container">
           <img src="photos/mack_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle tian-background-color"></div>
@@ -226,7 +272,7 @@ Mack met Tian at CUnity, an extinct Columbia orientation event that trapped fres
 
 <br><br>Mack currently lives in San Francisco and extols the majestic beauty of the western lands to those looking to reconsider their eastern ties. Mack is really happy that Tiangela found each other and hope they name their kids after Pokemons as well.
       </div>
-      <div class="bridal-party-text">
+      <div class="bridal-party-text bridal-party-angela">
         <div class="bridal-party-image-container">
           <img src="photos/avatar-male.png" class="bridal-party-image">
           <div class="bridal-party-circle angela-background-color"></div>
@@ -234,14 +280,8 @@ Mack met Tian at CUnity, an extinct Columbia orientation event that trapped fres
 Andrew Day, brother of Angela Day. Currently a senior in Hofstra University, majoring in Marketing. He is full of brilliant ideas and always is up for fun. He loves basketball, sleeping and eating. When he isn't doing any of those he probably is reading. Being a big fan of Game of Thrones, he has self titled himself "Lord Commander of the Day's Watch. His favorite number is 13.
       </div>
     </div>
+
   </div>
 
-  <div class="location-container container">
-    <a name="locaion">
-      <div class="container-title">
-        THE LOCATION
-      </div>
-    </a>
-  </div>
 </body>
 </html>
