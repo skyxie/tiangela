@@ -9,16 +9,6 @@ body {
   text-align: center;
 }
 
-.intro {
-  position: absolute;
-  top: 232px;
-  left: 442px;  
-  color: white;
-  font-family: gotham-narrow-book;
-  font-size: 11pt;
-  line-height: 2;
-}
-
 .container {
   min-width: 1024px;
   max-width: 100%;
