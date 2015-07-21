@@ -60,3 +60,8 @@ img.bridal-party-image {
   border-radius: 50%;
   z-index: -1;
 }
+
+.bridal-party-title {
+  font-weight: 900;
+  text-transform: uppercase;
+}
