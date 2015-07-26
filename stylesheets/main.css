@@ -9,6 +9,14 @@ body {
   text-align: center;
 }
 
+/* Used by elements in timeline */
+h4 {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 .container {
   min-width: 1024px;
   max-width: 100%;
