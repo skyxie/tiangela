@@ -18,7 +18,8 @@ body {
 .container-title {
   width: 100%;
   text-align: center;
-  font-size: 12pt;
+  font-size: 18pt;
+  font-weight: bold;
 }
 
 .tian-background-color {

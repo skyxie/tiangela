@@ -32,7 +32,6 @@
 
 .cntl-bar-fill {
 	background-color: rgba(192, 73, 157, 0.9);
-  mix-blend-mode: multiply;
 	position: absolute;
 	left:0;
 	right:0;
