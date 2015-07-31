@@ -13,27 +13,17 @@
   <script src="javascript/bridal-party.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('div.event-year').click(function showEventTitleDesc(evt) {
-        // Hide all other event descriptions and titles
-        $('div.event-title').hide();
-        var eventDescriptionElems = $('div.about-event-description');
-        eventDescriptionElems.hide();
-        // Show sibling event title      
-        var e = $(evt.target);
-        e.parent().find('.event-title').show();
-        // Show matching event description
-        eventDescriptionElems.filter('.event-description-'+e.html()).show();
-      });
-
       $('.cntl').cntl({
         revealbefore: 200,
         anim_class: 'cntl-animate',
-        onreveal: null
+        onreveal: null,
+        bar_fill_class: 'cntl-bar-fill'
       });
 
-      $('.bridal-party-container').bp({
+      $('.bridal-party-container').cntl({
         revealbefore: 100,
         anim_class: 'bridal-party-animate',
+        statelist_class: 'bridal-party-text', 
         onreveal: null
       });
     });
@@ -284,7 +274,7 @@ Andrew Day, brother of Angela Day. Currently a senior in Hofstra University, maj
           <img src="photos/tian_parents_120x120.jpg" class="bridal-party-image">
           <div class="bridal-party-circle tian-background-color"></div>
         </div>
-        <h4>Mother and Father of the Groom</h4>
+        <h4>Mother and Father of the Groom, Jian Du and Hanzhen Xie</h4>
       </div>
       <div class="bridal-party-text bridal-party-angela">
         <div class="bridal-party-image-container">
@@ -310,7 +300,7 @@ Andrew Day, brother of Angela Day. Currently a senior in Hofstra University, maj
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#bridal-party" class="nav">THE WEDDING PARTY</a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542465667&amp;pwsurl=" class="nav">REGISTRY</a>
+    <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&amp;eventType=Wedding&amp;registryId=542465667&amp;pwsurl=" class="nav">REGISTRY</a>
   </div>
 
 </body>
