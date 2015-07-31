@@ -26,6 +26,10 @@
         statelist_class: 'bridal-party-text', 
         onreveal: null
       });
+
+      if (navigator.userAgent.match(/Firefox/)) {
+        $('.circle').addClass('circle-firefox');
+      }
     });
   </script>
 </head>

@@ -32,3 +32,7 @@
   position: absolute;
   mix-blend-mode: multiply;
 }
+
+.circle-firefox {
+  mix-blend-mode: saturation;
+}
