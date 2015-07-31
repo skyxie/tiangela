@@ -12,7 +12,7 @@ body {
 /* Used by elements in timeline */
 h4 {
   margin-top: 0px;
-  font-size: 18px;
+  font-size: 18Gpx;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -43,8 +43,13 @@ h4 {
   padding: 10px 0px 10px 0px;
   position: fixed;
   bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
+  width: 100%;
+}
+
+.footer-container {
+  height: 100px;
 }
 
 a { text-decoration: none; }
