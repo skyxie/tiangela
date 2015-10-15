@@ -14,6 +14,23 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="javascript/jquery.cntl.js"></script>
   <script type="text/javascript">
+    function setCountdown() {
+      var now = new Date();
+      var wedding = new Date(2015, 12, 19, 15, 0, 0, 0);
+      var diff = wedding - now;
+
+      var msDiff = diff % 1000;
+      diff = Math.floor((diff - msDiff)/1000);
+      var sDiff = diff % 60;
+      diff = Math.floor((diff - sDiff)/60);
+      var mDiff = diff % 60;
+      diff = Math.floor((diff - mDiff)/60);
+      var hDiff = diff % 24;
+      var dDiff = Math.floor((diff - hDiff)/24);
+
+      $('#countdown')[0].innerHTML = dDiff + " DAYS " + hDiff + " HOURS " + mDiff + " MINUTES " + sDiff + "." + msDiff + " SECONDS";
+    }
+
     $(document).ready(function() {
       $('.cntl').cntl({
         revealbefore: 200,
@@ -32,6 +49,8 @@
       if (navigator.userAgent.match(/Firefox/)) {
         $('.circle').addClass('circle-firefox');
       }
+
+      setInterval(setCountdown, 100);
     });
   </script>
 </head>
@@ -123,6 +142,11 @@
                 <div class="wedding-info-block">
                   <div class="wedding-info-label">DATE</div>
                   <div class="wedding-info-content">DECEMBER 19TH, 2015 03:00PM</div>
+                </div>
+
+                <div class="wedding-info-block">
+                  <div class="wedding-info-label">COUNTDOWN</div>
+                  <div class="wedding-info-content" id="countdown"></div>
                 </div>
 
                 <div class="wedding-info-block">
