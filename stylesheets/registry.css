@@ -1,0 +1,15 @@
+.registry-title {
+  padding: 60px 0px 20px 0px;
+}
+
+.registry-row {
+  clear: both;
+  margin: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.registry-complete {
+  text-decoration: line-through;
+}

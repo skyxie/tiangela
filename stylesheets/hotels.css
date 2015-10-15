@@ -1,0 +1,19 @@
+.hotels-title {
+  padding: 0px 0px 20px 0px;
+}
+
+.hotels-row {
+  clear: both;
+  margin: auto;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hotels-cell {
+  width: 40%;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+}
